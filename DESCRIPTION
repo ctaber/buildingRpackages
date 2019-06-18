@@ -1,0 +1,21 @@
+Package: buildingRpackages
+Title: Coursera's Building R Packges Week 4 Assingment
+Version: 0.1.0
+Authors@R: person("Chris", "Taber", email = 'taber.christopher@gmail.com', role =c('aut', 'cre'))
+Description: Taking the R files from Week 2's assessment about documentation and putting that file in an R package.
+Depends: R (>= 3.5.1)
+License: GPL-2
+Encoding: UTF-8
+LazyData: TRUE
+Imports: 
+    dplyr,
+    tidyr,
+    readr,
+    maps,
+    graphics,
+    testthat
+Sugeests: 
+    knitr,
+    rmarkdown
+RoxygenNote: 6.1.1
+VignetteBuilder: knitr

@@ -1,0 +1,60 @@
+---
+title: "Package Overview"
+author: "Chris Taber"
+date: "2019-06-06"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Package Overview}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+library(knitr)
+library(buildingRpackages)
+```
+
+
+This Package includes functions used to read in and map accident data from the US National Highway Traffic Safety Administration's Fatality Analysis Reporting System, which is a nationwide census providing the American public yearly data regarding fatal injuries suffered in motor vehicle traffic crashes. 
+
+## Functions
+
+**fars_read** This is a simple function that imports a csv file as a tibble dataframe. The function check if the file exists, and if it does, reads in the file and converts it to a tbl_df. An error will occur if filename doe not exist.
+
+**make_filename** This function take a year, converts it to an interger, and prints the new file name with the year appended to the end as a character vector (eg. "accident_1996.csv.bz2"). A warning will occur if year is not supplied as a numeric value.
+
+**fars_read_years** This function take a vector or list of years and creates a filename for all years provided. Provides an error message if invalid year supplied.
+
+**fars_summarize_years** This funtion returns a tibble for each Year and Month combination that counts the total rows for each month, with each year as its own column.
+
+**fars_map_state** This function returns a plot of all accidents in a state for the year provided. An error will occur if invalid state.num provided. If no accidents exist for state.num and year provided, a message will be reutrned stating this.
+
+
+
+**Example of *fars_read*:**
+```{r echo=TRUE}
+filename <- system.file('extdata', 'accident_2013.csv.bz2', package = 'buildingRpackages')
+fars_read(filename)
+```
+
+
+**Example of *fars_read_years*:**
+```{r echo=TRUE}
+fars_read_years(c(2013,2014))
+```
+
+**Example of *fars_summarize_years*:**
+```{r echo=TRUE}
+fars_summarize_years(c(2013, 2014))
+```
+
+
+**Example of *fars_map_state*:**
+```{r echo=TRUE}
+fars_map_state(1,2013)
+fars_map_state(10,2014)
+```
+
