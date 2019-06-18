@@ -13,7 +13,8 @@ Imports:
     readr,
     maps,
     graphics,
-    testthat
+    testthat,
+    knitr
 Sugeests: 
     knitr,
     rmarkdown
