@@ -17,6 +17,6 @@ This function take a year, converts it to an interger, and prints the new file n
 A warning will occur if year is not supplied as a numeric value.
 }
 \examples{
-make_filename(1996)
+\dontrun{make_filename(1996)}
 
 }

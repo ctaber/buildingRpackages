@@ -8,7 +8,7 @@
 #' @return Returns a character vector containing a formatted combination of text (eg. "accident_") and numeric year variable supplied.
 #'
 #' @examples
-#' make_filename(1996)
+#' \dontrun{make_filename(1996)}
 #'
 #' @export
 

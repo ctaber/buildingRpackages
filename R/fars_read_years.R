@@ -10,7 +10,7 @@
 #' @return Returns a tibble with columns MONTH, year from existing files with those columns and year values.  Returns a message stating invalid year and returns NULL if year does not exist.
 #'
 #' @examples
-#' fars_read_years(c(2013,2014,2017))
+#' \dontrun{fars_read_years(c(2013,2014,2017))}
 #'
 #' @export
 

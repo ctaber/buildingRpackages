@@ -18,6 +18,6 @@ The function check if the file exists, and if it does, reads in the file and con
 An error will occur if filename doe not exist.
 }
 \examples{
-fars_read('this_file_does_not_exist.csv')
+\dontrun{fars_read('this_file_does_not_exist.csv')}
 
 }

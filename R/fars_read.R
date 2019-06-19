@@ -13,7 +13,7 @@
 #' @return The function returns a tbl_df.
 #'
 #' @examples
-#' fars_read('this_file_does_not_exist.csv')
+#' \dontrun{fars_read('this_file_does_not_exist.csv')}
 #'
 #' @export
 

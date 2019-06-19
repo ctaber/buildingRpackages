@@ -13,6 +13,6 @@ A tibble with MONTH as rows, years as columns, and counts of year and month comb
 This funtion returns a tibble for each Year and Month combination that counts the total rows for each month, with each year as its own column.
 }
 \examples{
-fars_summarize_years(c(2013, 2014))
+\dontrun{fars_summarize_years(c(2013, 2014))}
 
 }

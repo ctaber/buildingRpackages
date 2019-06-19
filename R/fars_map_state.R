@@ -17,7 +17,7 @@
 #' @return Returns a state map for the state.num provided for the year provided, with a point in the geographic location of each accident that occured.
 #'
 #' @exmaples
-#' fars_map_state(44,2013)
+#' \dontrun{fars_map_state(44,2013)}
 #'
 #' @export
 

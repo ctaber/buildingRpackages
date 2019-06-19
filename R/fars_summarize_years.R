@@ -13,7 +13,7 @@
 #' @return A tibble with MONTH as rows, years as columns, and counts of year and month combination as the values.
 #'
 #' @examples
-#' fars_summarize_years(c(2013, 2014))
+#' \dontrun{fars_summarize_years(c(2013, 2014))}
 #'
 #' @export
 

@@ -17,6 +17,6 @@ This function take a vector or list of years and creates a filename for all year
 Provides an error message if invalid year supplied.
 }
 \examples{
-fars_read_years(c(2013,2014,2017))
+\dontrun{fars_read_years(c(2013,2014,2017))}
 
 }
